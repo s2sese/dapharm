@@ -1,3 +1,12 @@
+// toggle 
+function openNav(){
+    document.getElementById("myNav").style.width = "100%";
+}
+// close
+function closeNav(){
+    document.getElementById("myNav").style.width = "0%";
+}
+
 $(function () {
     
 $(".logo, .btnTop").on("click", () => {
