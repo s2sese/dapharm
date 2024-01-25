@@ -18,7 +18,7 @@ img:hover { opacity: .7; }
 /* logo */
 #wrap header .headerinner h1.logo a img { margin: 40px 30px 0 0; width: 150px; height: 27px; } 
 /* pc menu */
-#wrap header .headerinner .nav { height: 110px; position: relative; z-index: 9; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; } 
+#wrap header .headerinner .nav { white-space: nowrap; display: block; height: 110px; position: relative; z-index: 9; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; } 
 #wrap header .headerinner .mobileMenu { display: none; } 
 #wrap header .headerinner .nav ul.nav-list { display: flex; width: 100%; text-align: center; } 
 /* 대메뉴  */
@@ -172,11 +172,12 @@ section:nth-child(3).showBox { width: 100%; height: 1080px; }
 #wrap footer .footerInner .blist ul li:last-child a:hover { color: #999; } 
 /* mobile */
 @media(max-width: 720px){
+ #wrap header { width: 100%; background-color: rgba(255, 255, 255, 0.3); }
  #wrap header .headerinner .nav { display: none; } 
  #wrap header .headerinner ul.searchLang { display: none; } 
  #wrap header .headerinner .mobileMenu { display: block; z-index: 9999; } 
  #wrap header .headerinner .mobileMenu a { z-index: 99999; } 
- #wrap header .headerinner .mobileMenu span { display: block; position: absolute; top: 40px; right: 34px; } 
+ #wrap header .headerinner .mobileMenu span { position: fixed; display: block; position: absolute; top: 40px; right: 34px;  z-index: 9999;} 
  #wrap header .headerinner .mobileMenu span img:hover { opacity: .7; } 
  #wrap header .headerinner .mobileMenu .overlay { width: 0; height: 100%; position: fixed; z-index: 9999; top: 0; right: 0; background-color: #fff; overflow: hidden; transition: .1s; } 
  #wrap header .headerinner .mobileMenu .overlay .closeBtn { position: absolute; top: 38px; right: 30px; } 
